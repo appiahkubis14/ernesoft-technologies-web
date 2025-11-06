@@ -75,6 +75,9 @@ def pro6(request):
 def pro7(request):
     return render(request, 'core/projects/pro7.html')
 
+def pro8(request):
+    return render(request, 'core/projects/pro8.html')
+
 
 
 def it_service(request):

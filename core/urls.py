@@ -27,6 +27,7 @@ urlpatterns = [
     path('projects/eximbank/', views.pro5, name='pro5'),
     path('projects/kapture-gis/', views.pro6, name='pro6'),
     path('projects/hcms/', views.pro7, name='pro7'),
+    path('projects/gps-tracking/', views.pro8, name='pro8'),
 
     path('services/it/', views.it_service, name='it_service'),
     path('services/web-development/', views.web_service, name='web_service'),

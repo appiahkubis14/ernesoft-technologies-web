@@ -39,7 +39,19 @@
 		<script src="/static/assets/js/vendor/modernizr-3.5.0.min.js"></script>	
 		<!-- bootstrap icons -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-		
+		<style>
+			.solutek_menu .nav_scroll li a.active {
+			color:#23a5fb ;
+			font-weight: bold;
+			background-color: transparent;
+			/* Add any other active state styles you want */
+		}
+
+		/* Optional: Add hover effects */
+		.solutek_menu .nav_scroll li a:hover {
+			color: #23a5fb;
+		}
+		</style>
 	</head>
 <body>
 	<!-- loder -->
@@ -459,7 +471,7 @@
 	<!--  animated-text js -->	
 	<script src="/static/assets/js/animated-text.js"></script>
 	<!-- venobox min js -->
-	<script src="static/venobox/venobox.min.js"></script>
+	<script src="/static/venobox/venobox.min.js"></script>
 	<!-- isotope js -->
 	<script src="/static/assets/js/isotope.pkgd.min.js"></script>
 	<!-- jquery meanmenu js -->	
@@ -476,5 +488,20 @@
 	<script src="/static/assets/js/splide.min.js"></script>
 	<!-- theme js -->	
 	<script src="/static/assets/js/theme.js"></script>
+
+	<script>
+		// Add this script to handle active states
+	document.addEventListener('DOMContentLoaded', function() {
+		const currentPath = window.location.pathname;
+		const navLinks = document.querySelectorAll('.solutek_menu .nav_scroll li a');
+		
+		navLinks.forEach(link => {
+			if (link.getAttribute('href') === currentPath) {
+				link.classList.add('active');
+			}
+		});
+	});
+	</script>
 </body>
 </html>
+

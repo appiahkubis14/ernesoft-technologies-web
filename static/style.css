@@ -1944,7 +1944,7 @@ ul.accordion {
 }
 
 a.active {
-  background: #fff !important;
+  /* background: #fff !important; */
 }
 
 .accordion li a span {
